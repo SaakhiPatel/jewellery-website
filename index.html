@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewellery Shop</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            background-color: #faf9f6;
+        }
+        .navbar-brand {
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        header {
+            background: url('https://images.unsplash.com/photo-1523275335684-37898b6baf30') center/cover;
+            height: 90vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+        }
+        header .content {
+            max-width: 600px;
+            margin-left: 50px;
+        }
+        .section-title {
+            text-align: center;
+            font-weight: 600;
+            margin: 50px 0 20px;
+        }
+        .product-card img {
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer {
+            background: #111;
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">✨ Royal Jewels</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#products">Products</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header id="home">
+        <div class="content">
+            <h1>Exclusive Jewellery Collection</h1>
+            <p>Handcrafted elegance designed to make you shine brighter.</p>
+            <a href="#products" class="btn btn-warning btn-lg mt-3">Shop Now</a>
+        </div>
+    </header>
+
+    <!-- PRODUCTS -->
+    <section id="products" class="container mt-5">
+        <h2 class="section-title">Our Featured Jewellery</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card product-card p-3 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9" class="card-img-top" alt="Necklace">
+                    <h5 class="mt-3">Gold Necklace</h5>
+                    <p>Elegant 22k gold necklace designed for special occasions.</p>
+                    <button class="btn btn-dark w-100">View Details</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card p-3 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1600181952037-7aeedb2eb3e9" class="card-img-top" alt="Ring">
+                    <h5 class="mt-3">Diamond Ring</h5>
+                    <p>A premium cut diamond ring perfect for engagements.</p>
+                    <button class="btn btn-dark w-100">View Details</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card p-3 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1585386959984-a4155224a1ad" class="card-img-top" alt="Bracelet">
+                    <h5 class="mt-3">Silver Bracelet</h5>
+                    <p>Stylish and modern silver bracelet for daily wear.</p>
+                    <button class="btn btn-dark w-100">View Details</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="container mt-5">
+        <h2 class="section-title">About Us</h2>
+        <p class="text-center mx-auto" style="max-width: 700px;">
+            Royal Jewels has been crafting luxury jewellery for over 25 years,
+            blending traditional artistry with modern elegance. Our goal is to
+            provide timeless designs with unmatched quality.
+        </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="container mt-5 mb-5">
+        <h2 class="section-title">Contact Us</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form class="p-4 shadow-sm bg-white rounded">
+                    <input class="form-control mb-3" type="text" placeholder="Your Name" required>
+                    <input class="form-control mb-3" type="email" placeholder="Email" required>
+                    <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+                    <button class="btn btn-warning w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="text-center">
+        <p>© 2025 Royal Jewels | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src ="script.js"></script>
+</body>
+</html>
